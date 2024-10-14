@@ -1,0 +1,182 @@
+*{
+    /* outline: 1px solid red; */
+}
+.contenBg{
+    margin: auto;
+    background-image: url(../img/place-big.jpeg);
+    background-size: cover;
+    background-position: bottom center;
+}
+.about_content{
+    position: relative;
+}
+
+.contentBanner{
+    width: 100%;
+    position: absolute;
+    background-image: url(../img/pattern-1.svg);
+    
+    z-index: -1;
+}
+.content_text h3{
+    color: var(--mainBlue);
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:767px){
+    .about_content{
+        width: 100%;
+        /* margin-top: 100px; */
+    }
+    .contentBanner{
+        height: 500px;
+        top: -40px;
+        background-size: 20px;
+    }
+    .contenBg{
+        width: 100%;
+        height: 300px;
+
+    }
+    .content_text{
+        position: relative;
+        top: -40px;
+        width: 85%;
+        /* height: 300px; */
+        margin: auto;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 5px 5px 10px #ccc;
+        padding-bottom: 20px;
+    }
+
+}
+@media screen and (min-width:768px){
+    .about_content{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .contentBanner{
+        height: 700px;
+        background-size: 30px;
+        top: 0px;
+    }
+    .contenBg{
+        max-width: 1200px;
+        width: 85%;
+        height: 600px;
+    }
+    .content_text{
+        position: relative;
+        top: -100px;
+        width: 800px;
+        height: 300px;
+        margin: auto;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 5px 5px 5px #ccc;
+    }
+    .content_text p{
+        line-height: 1.8em;
+    }
+    
+    
+}
+.content_text h3{
+    text-align: center;
+    font-weight: 300px;
+    line-height: 1.5em;
+}
+.content_text p{
+    padding: 20px 10px;
+}
+
+
+/* --分店-------------------------------------------- */
+.place_title h3{
+    text-align: center;
+    background-color: var(--mainLightgray);
+    padding: 5px;
+    color: var(--mainBlue);
+}
+@media screen and (max-width:767px){
+    .about_place{
+        width: 100%;
+    }
+    .place_group{
+        width: 85%;
+        margin: auto;
+        padding: 15px 0;
+    }
+    .place_title{
+        width: 85%;
+        margin: 0 auto 30px;
+    }
+    .place_pic img{
+        width: 100%;
+    }
+    .place_text{
+
+    }
+    
+}
+@media screen and (min-width:768px){
+    .about_place{
+        max-width: 1200px;
+        width: 85%;
+        margin: auto;
+    }
+    .place_group{
+        margin: 80px 0px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    .place_border{
+        position: absolute;
+        width: 100%;
+        height: 250px;
+        border: 1px solid var(--mainBlue);
+        
+        top: 50%-250px;
+        z-index: -1;
+    }
+    .place_group:hover .place_border{
+        background-color: var(--mainBlue);
+    }
+    .place_pic img{
+        width: 100%;
+    }
+    .place_item{
+        /* display: inline-block; */
+        vertical-align: middle;
+    }
+    .place_pic{
+        width: 40%;
+        padding: 0 30px;
+        text-align: center;
+    }
+    .place_text{
+        width: 40%;
+    }
+}
+
+
+/* .place_title{
+    margin: 50px 0px;
+    border-bottom: 2px solid #ccc;
+} */
+.place_text h3{
+    margin: 15px 0;
+}
+.googleMap{
+    color: var(--deepGray);
+    font-size: 14px;
+    text-align: right;
+    line-height: 20px;
+    margin-top: 10px;
+
+}

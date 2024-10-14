@@ -1,0 +1,96 @@
+*{
+    outline: 1px solid red;
+}
+h2{
+    font-size: 26px;
+}
+p{
+    line-height: 1.6em;
+}
+.goto_text p{
+    font-size: 16px;
+    width: 1200px;
+    margin: auto;
+    padding: 50px 0px 40px 0px;
+    color: #555;
+    
+}
+
+/* --內容-------------------------------------------- */
+.sell_container{
+    width: 1200px;
+    padding: 50px 0px 100px 0px;
+    margin: auto;
+}
+.sell_item{
+    float: left;
+
+}
+.sellQA{
+    width: 250px;
+}
+.sellQA .title{
+    text-align: center;
+    font-size: 22px;
+    padding: 15px;
+    background-color: #777;
+    color: #fff;
+    border-bottom: 1.5px solid #ccc;
+}
+.sellQA a h4{
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    color: #555;
+    border-bottom: 1.5px solid #ccc;
+}
+.sell_right{
+    width: 900px;
+    margin-left: 50px;
+}
+.sell_btn{
+    font-size: 26px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px #ccc;
+    margin-bottom: 30px;
+}
+.sell_circle{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin: 23px;
+    border-radius: 50%;
+    background-color: #ffe23b;
+    vertical-align: middle;
+}
+.sell_circle:hover{
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin: 23px;
+    border-radius: 10px;
+    background-color: #ffe23b;
+    vertical-align: middle;
+}
+.sell_circle h5{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    color: #555;
+    line-height: 250px;
+}
+.sell_circle p{
+    font-size: 20px;
+    color: #555;
+    line-height: 1.2em;
+    padding: 150px 8px;
+    /* text-align: center; */
+
+}
+
+.clearfix{
+    clear: both;
+}

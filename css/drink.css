@@ -1,0 +1,197 @@
+*{
+    /* outline: 1px solid #f00; */
+}
+
+/* ----short banner----------------------------------------- */
+.short_banner{
+    width: 100%;
+    position: relative;
+    background-image: url(../img/pattern-1.svg);
+    background-size: 30px;
+    z-index: -2;
+}
+@media screen and (max-width:767px){
+    .short_banner{
+        margin-bottom: 50px;
+    }
+    .shortBanner_pic{
+        width: 100%;
+    
+    }
+    .shortBanner_pic img{
+        width: 100%;
+    }
+    .page_title h2{
+        color: #fff;
+    }
+    .page_title{
+        padding: 10px;
+        display: inline-block;
+        position: absolute;
+        top: -30px;
+        left: 1px;
+        background-color: var(--mainBlue);
+        color: #fff;
+        /* border: 1px solid var(--mainGray); */
+        
+    }
+    
+}
+@media screen and (min-width:768px){
+    .short_banner{
+        margin: 50px 0px;
+    }
+    .banner_group{
+        /* width: 70%; */
+        max-width: 1200px;
+        margin: auto;
+        
+    }
+    .shortBanner_pic{
+        display: flex;
+        justify-content: center;
+    }
+    .page_title{
+        width: 350px;
+        position: relative;
+    }
+    .page_title ::before{
+        content: '';
+        display: block;
+        width: 30px;
+        position: absolute;
+        top: 50%;
+        left: 60px;
+        border: 1px solid #555;
+    }
+    
+    .page_title ::after{
+        content: '';
+        display: block;
+        width: 30px;
+        position: absolute;
+        top: 50%;
+        right: 60px;
+        border: 1px solid #555;
+    }
+    .page_title h2{
+        line-height: 300px;
+        text-align: center;
+    }
+    .shortBanner_pic img{
+        display: inline-block;
+        vertical-align: bottom;
+    }
+}
+/* ------內容---------------------------------------- */
+.drink_container{
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.drink_items{
+    position: relative;
+    margin-bottom: 40px;
+}
+.drink_coffee{
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    box-sizing: border-box;
+    position: relative;
+    
+    /* background-image: url(../img/coffee-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.drink_coffee img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.drinkImg-1{
+    opacity: 0;
+    z-index: 2;
+    animation: turn 10s linear infinite;
+}
+.drinkImg-2{
+    opacity:0;
+    z-index: 1;
+    animation: turn 10s linear 5s infinite;
+}
+@keyframes turn{
+    20%{opacity: 1;}
+    50%{opacity: .4;}
+    60%{opacity: 0;}
+    /* 80%{opacity: 0;} */
+    100%{opacity: 0;}
+}
+
+.title_word{
+    width: 80%;
+    height: 200px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(255,255,255,.7);
+    /* border: 2px solid var(--mainGray); */
+    line-height: 200px;
+    
+}
+.title_word h3{
+    line-height: 200px;
+}
+.drink_text h3{
+    text-align: center;
+    background-color: var(--mainLightgray);
+    padding: 5px;
+    color: var(--mainBlue);
+    
+}
+.drink_text{
+    width: 80%;
+    margin: 20px auto;
+}
+.drink_text p{
+    border-bottom: 1px solid var(--mainLightgray);
+    padding: 10px;
+}
+@media screen and (max-width:767px){
+    .drink{
+        width: 100%;
+    }
+
+    .drink_text p{
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+    .drink_coffee img{
+        width: 100%;
+        margin: auto;
+    }
+}
+@media screen and (min-width:768px){
+    .drink_container{
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .drink_items{
+        padding: 1%;
+
+        flex: 1;
+    }
+    .drink_coffee img{
+        width: 100%;
+    }
+}
+
+
+
+
