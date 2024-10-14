@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .hb {
+            display: none;
+        }
+
+        .btn {
+            position: absolute;
+            opacity: 0;
+        }
+        .hb {
+                width: 40px;
+                height: 40px;
+                display: block;
+                box-sizing: border-box;
+                border: 1px solid #aaa;
+            }
+
+            .header nav {
+                position: absolute;
+                height: calc(100vh - 60px);
+                background-color: #afa;
+                left: -100%;
+                width: 250px;
+                top: 100%;
+                transition: left .5s;
+            }
+
+            .header nav a {
+                list-style: none;
+                display: block;
+                padding: 14px 20px;
+                border-bottom: 1px solid #000;
+            }
+
+            .btn:checked~.header nav {
+                left: 0;
+            }
+        }
+
+        
+        @media screen and (min-width:768px) {
+            .header {
+                background-color: #ccc;
+                display: flex;
+
+                box-sizing: border-box;
+                position: relative;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .header a img {
+                vertical-align: middle;
+            }
+            .header nav a {
+                display: inline-block;
+                padding: 4px 10px;
+            }
+        }
+
+
+
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="checkbox" name="" id="menu" class="btn">
+    <div class="header">
+        <a href="#" class="logo">
+            <img src="https://picsum.photos/80/40/?random=1">
+        </a>
+        <label for="menu" class="hb"></label>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </div>
+
+
+</body>
+
+</html>
